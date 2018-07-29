@@ -13,8 +13,11 @@ public class SumOfGivenWord {
 		map.put('A', 0);
 		map.put('B', 1);
 		for(int i = 2 ; i < str1.length() ; i++){
+			System.out.println("map.get(str1.charAt(i-1))+map.get(str1.charAt(i-2))-->"+(map.get(str1.charAt(i-1))+map.get(str1.charAt(i-2))));
+			//System.out.println("map.get(str1.charAt(i-2))-->"+map.get(str1.charAt(i-2)));
 			n = map.get(str1.charAt(i-1))+map.get(str1.charAt(i-2));
 			map.put(str1.charAt(i), n);
+			System.out.println("map.put(str1.charAt(i), n)-->"+map.put(str1.charAt(i), n));
 		}
 		
 		for(int i = 0 ; i < str.length() ; i++){

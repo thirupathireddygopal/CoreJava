@@ -54,14 +54,14 @@ class Child extends Parent{
 public class InheritanceDemo1 {
 
 	public static void main(String[] args) {
-		Parent parent = new Parent();
-		parent.showParent();
-		
 		Child child = new Child();
 		child.showParent();
 		child.showChild();
 		Child child2 = new Child(10,20,30);
 		child2.sum();
+		
+		Parent parent = new Parent();
+		parent.showParent();
 		
 	}
 
